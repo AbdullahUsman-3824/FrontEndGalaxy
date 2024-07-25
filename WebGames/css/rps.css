@@ -1,0 +1,136 @@
+/* Global styles */
+* {
+  font-family: var(--font2);
+}
+
+/* Main container styles */
+.mainContainer {
+  width: 60vw;
+  margin-top: 10vh;
+}
+
+/* Game container styles */
+.gameContainer {
+  position: relative;
+  border: 0.2vw solid var(--text-color);
+  border-radius: 2vw;
+}
+
+/* Score board styling */
+.scoreBoard {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 10vw;
+  border: 0.2vw solid var(--text-color);
+  height: 3vw;
+  top: -1.5vw;
+  background-color: var(--color-light);
+  border-radius: 1vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2.2vw;
+}
+.colon {
+  padding-bottom: 0.3vw;
+}
+
+/* Game area styling */
+.area {
+  display: flex;
+  background-color: var(--color-light);
+  border-radius: 2vw;
+  aspect-ratio: 4/1;
+}
+
+.area div {
+  /* height: 30vh; */
+  width: 50%;
+}
+
+/* Player and system area styling */
+.playerArea,
+.systemArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vw;
+  color: var(--text-color);
+}
+
+.playerArea {
+  transform: rotate(90deg);
+}
+
+.systemArea {
+  transform: rotate(270deg);
+}
+
+/* User and PC names */
+.userName,
+.pcName {
+  position: absolute;
+  top: 45%;
+  background-color: var(--text-color);
+  color: var(--color-light);
+  width: 4vw;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.userName {
+  left: -2vw;
+}
+
+.pcName {
+  right: -2vw;
+}
+
+/* Message styling */
+.message {
+  text-align: center;
+  font-size: 2vw;
+  padding: 2vw;
+  color: var(--text-color);
+}
+
+/* Controls styling */
+.keys {
+  border: 0.2vw solid var(--text-color);
+  background-color: var(--color-light);
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  gap: 2.5vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#reset {
+  width: 2.5vw;
+  height: 2.5vw;
+  font-size: 0.8vw;
+  border: 0.15vw solid var(--text-color);
+  background-color: var(--color-light);
+  border-radius: 50%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1150px) {
+  .title,
+  .logo {
+    font-size: 1.5rem;
+  }
+}

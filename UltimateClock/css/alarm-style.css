@@ -1,0 +1,354 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+/* Remove spinner from number input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Add new font  */
+@font-face {
+  font-family: seven-segment;
+  src: url("../mediaFiles/7_Segment.ttf");
+}
+
+/* ----------------Main container styles---------------- */
+.mainContainer {
+  width: 700px;
+  margin: 50px auto 0px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+/* ---------------Current Time Styling------------  */
+.current {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 5px 10px;
+  border-bottom: 1px solid gray;
+}
+
+/* --------------------Alarm Box--------------------  */
+.box {
+  background-color: var(--outline);
+  border-radius: 10px;
+  width: 600px;
+  margin: 40px auto 0px;
+  box-shadow: 0px 0px 5px var(--text-color);
+}
+
+.box p {
+  margin: 0px 10px;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+.set-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--outline);
+  border-radius: 10px;
+  background-color: var(--background-color);
+  font-family: seven-segment;
+}
+.alarm-set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hour and Minute boxes styles */
+.hour-box,
+.min-box,
+.sec-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px;
+}
+
+/* Time display styles */
+.time {
+  width: 120px;
+  height: 120px;
+  padding: 5px;
+  text-align: center;
+  font-size: 6rem;
+  font-family: seven-segment;
+  color: rgb(2, 161, 2);
+  border: 1px solid var(--outline);
+  border-radius: 5px;
+  background: var(--gradient-l);
+}
+
+/* Colon styles */
+.colon {
+  font-size: 8rem;
+  padding-bottom: 50px;
+  color: rgb(2, 161, 2);
+  font-family: seven-segment;
+}
+
+/* Input controls styles */
+.input-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  border: 1px solid #444;
+  background-color: var(--outline);
+  color: var(--text-color);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+#hi,
+#mi {
+  padding-top: 15px;
+}
+
+#hd,
+#md {
+  padding-bottom: 15px;
+}
+
+.input-controls:hover {
+  background-color: #777;
+}
+
+.input-controls:active {
+  background-color: #555;
+}
+
+/* AM/PM switch styles */
+.ampm-switch input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ampm-switch {
+  display: flex;
+  flex-direction: column;
+}
+
+.ampm-switch label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 0px;
+  height: 30px;
+  width: 50px;
+  /* border: 1px solid #333; */
+  cursor: pointer;
+  color: #333;
+  background-color: #888;
+  font-size: 1.2rem;
+}
+
+.ampm-switch input[type="radio"]:checked + label {
+  background-color: #555;
+  color: #aaa;
+  border: 1px solid #aaa;
+  font-size: 1.3rem;
+}
+#am-label {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#pm-label {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* Set Alarm button styles */
+#setBtn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 20px;
+  padding: 10px;
+  border: transparent;
+  color: white;
+  background-color: #1a88ef;
+  cursor: pointer;
+}
+
+#setBtn:hover {
+  box-shadow: 0 0 5px var(--text-color);
+}
+
+#setBtn:active {
+  background-color: #1562aa;
+}
+
+/* ----------------Display Container Styling---------------- */
+
+.dueAlarm {
+  border: 2px solid var(--outline);
+  border-radius: 5px;
+  background-color: var(--background-color);
+  padding: 10px;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.value {
+  padding-left: 50px;
+}
+
+#removeBtn {
+  background-color: transparent;
+  border: none;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+#removeBtn:hover {
+  text-shadow: 0px 0px 5px;
+}
+
+#toggleBox {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+/* -------------toggle----------  */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  margin: 0px;
+}
+
+/* Hide default checkbox */
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider (round shape) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  box-shadow: 0px 0px 5px var(--text-color);
+  transition: 0.4s;
+  border-radius: 17px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Styling when the toggle is "on" */
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainContainer {
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    transform: scale(80%);
+  }
+  .box {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 615px) {
+  .box {
+    width: 90%;
+  }
+  .set-add {
+    flex-direction: column;
+  }
+  .alarm-set {
+    transform: scale(0.9);
+  }
+  #setBtn {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+  }
+}
+@media screen and (max-width: 468px) {
+  .mainContainer {
+    transform: scale(70%);
+    margin: 0px;
+  }
+  .box {
+    width: 95%;
+  }
+  .alarm-set {
+    transform: scale(80%);
+  }
+  #setBtn {
+    width: 80px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .alarm-set {
+    transform: scale(60%);
+  }
+  .box {
+    width: 100%;
+  }
+  .alarm-set {
+    transform: scale(0.7);
+  }
+  #setBtn {
+    width: 60px;
+    font-size: 0.6rem;
+  }
+}

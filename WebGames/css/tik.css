@@ -1,0 +1,164 @@
+/* Main container for centering content */
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  margin: 5vw 0px;
+}
+
+/* Container for the Tic Tac Toe game */
+.gameContainer {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  position: relative;
+  box-shadow: 0px 0px 10px var(--text-color);
+  border-radius: 1vw;
+}
+
+/* Individual game box */
+.box {
+  border: 0.1vw solid var(--text-color);
+  font-size: 8vw;
+  font-family: var(--font2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Text inside the game box */
+.boxText {
+  color: var(--text-color);
+}
+
+/* Hover effect on game boxes */
+.box:hover {
+  background-color: beige;
+}
+
+/* Styling for O player */
+.O {
+  color: blue;
+}
+
+/* Styling for X player */
+.X {
+  color: red;
+}
+
+/* Border utilities */
+.bt-0 {
+  border-top: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+.br-0 {
+  border-right: 0;
+}
+
+/* Border radius utilities */
+.btlr {
+  border-top-left-radius: 1vw;
+}
+.btrr {
+  border-top-right-radius: 1vw;
+}
+.bblr {
+  border-bottom-left-radius: 1vw;
+}
+.bbrr {
+  border-bottom-right-radius: 1vw;
+}
+
+/* Game name styling */
+.gameName {
+  font-size: 3vw;
+  font-family: var(--font1);
+}
+
+/* Game info text */
+.info {
+  font-family: var(--font2);
+}
+
+/* Line animation for winning move */
+.line {
+  position: absolute;
+  width: 0vw;
+  height: 0.7vw;
+  background-color: green;
+  transition: width 1s ease-in-out;
+  transform-origin: left;
+  border-radius: 10px;
+}
+
+/* Game info container */
+.gameInfo {
+  width: 20vw;
+  box-shadow: 0px 0px 5px var(--text-color);
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  font-size: 2vw;
+}
+
+/* Score display containers */
+.score-X-box, .score-O-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Score display formatting */
+.score {
+  display: flex;
+  font-size: 2vw;
+  gap: 2vw;
+  font-family: var(--font2);
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+/* Hover and active effects for buttons */
+#playAgain:hover {
+  background-color: rgb(214, 181, 181);
+}
+#playAgain:active {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+#reset:hover {
+  background-color: rgb(214, 181, 181);
+}
+#reset:active {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1150px) {
+  .mainContainer {
+    flex-direction: column;
+    transform: scale(1.2);
+  }
+  .title, .logo {
+    font-size: 1.5rem;
+  }
+}

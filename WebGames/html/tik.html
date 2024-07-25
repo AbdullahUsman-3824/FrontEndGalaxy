@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/utlis.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/tik.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="/">
+        <div class="logo">
+          <i class="fa-solid fa-house"></i>
+        </div>
+      </a>
+      <div class="title font1">Tik-Tac-Toe</div>
+      <div class="end"></div>
+      <!-- <hr class="my-4" /> -->
+    </nav>
+    <!-- Main Content-->
+    <div class="mainContainer">
+      <div class="gameContainer">
+        <div class="line"></div>
+        <div class="box bt-0 bl-0 btlr"><span class="boxText"></span></div>
+        <div class="box bt-0"><span class="boxText"></span></div>
+        <div class="box bt-0 br-0 btrr"><span class="boxText"></span></div>
+        <div class="box bl-0"><span class="boxText"></span></div>
+        <div class="box"><span class="boxText"></span></div>
+        <div class="box br-0"><span class="boxText"></span></div>
+        <div class="box bl-0 bb-0 bblr"><span class="boxText"></span></div>
+        <div class="box bb-0"><span class="boxText"></span></div>
+        <div class="box bb-0 br-0 bbrr"><span class="boxText"></span></div>
+      </div>
+      <div class="gameInfo">
+        <div class="score">
+          <div class="score-X-box">
+            <div class="value-x X">X</div>
+            <div id="score-X">0</div>
+          </div>
+          <hr />
+          <div class="score-O-box">
+            <div class="value-O O">O</div>
+            <div id="score-O">0</div>
+          </div>
+        </div>
+        <div class="info">Turn of X</div>
+        <div class="buttons">
+          <button class="btn-1" id="playAgain">Play Again</button>
+          <button class="btn-1" id="reset">Reset!</button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/tik.js"></script>
+  </body>
+</html>

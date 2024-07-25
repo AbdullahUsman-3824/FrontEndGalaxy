@@ -1,0 +1,127 @@
+css/<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/timer-style.css" />
+    <link rel="stylesheet" href="../css/alarm-style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="Nav">
+      <label class="toggle-control">
+        <input type="checkbox" checked="checked" id="mode-switch" />
+        <span class="control"></span>
+      </label>
+      <a class="navbar-brand" href="#">The Ultimate Clock</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/alarm.html">Alarm</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Timmer</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- mian section -->
+    <div class="box">
+      <p>Set Timer:</p>
+      <div class="set-add">
+        <div class="timerSetControls">
+          <div class="hour-box">
+            <button id="hi" class="input-controls">
+              <i class="fa-solid fa-sort-up"></i>
+            </button>
+            <input type="number" id="hours" class="time" min="0" value="00" />
+            <button id="hd" class="input-controls">
+              <i class="fa-solid fa-sort-down"></i>
+            </button>
+          </div>
+          <div class="colon">:</div>
+          <div class="min-box">
+            <button id="mi" class="input-controls">
+              <i class="fa-solid fa-sort-up"></i>
+            </button>
+            <input
+              type="number"
+              id="minutes"
+              class="time"
+              value="00"
+              min="0"
+              max="59"
+            />
+            <button id="md" class="input-controls">
+              <i class="fa-solid fa-sort-down"></i>
+            </button>
+          </div>
+          <div class="colon">:</div>
+          <div class="sec-box">
+            <button id="si" class="input-controls">
+              <i class="fa-solid fa-sort-up"></i>
+            </button>
+            <input
+              type="number"
+              id="seconds"
+              class="time"
+              value="00"
+              min="0"
+              max="59"
+            />
+            <button id="sd" class="input-controls">
+              <i class="fa-solid fa-sort-down"></i>
+            </button>
+          </div>
+        </div>
+        <button id="setBtn">Set</button>
+      </div>
+    </div>
+    <div class="timeRemaining"></div>
+    <!-- scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/timer-script.js"></script>
+    <script src="../js/DN-mode.js"></script>
+  </body>
+</html>

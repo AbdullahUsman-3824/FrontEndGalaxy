@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=New+Tegomin&family=Roboto&display=swap");
+.style-none {
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --bg-color: whitesmoke;
+  --text-color: rgb(58, 16, 16);
+  --color-light: beige;
+  --font1: "Baloo Bhaina 2", cursive;
+  --font2: "Roboto", sans-serif;
+  --font3: "New Tegomin", serif;
+}
+.font1 {
+  font-family: var(--font1);
+}
+.font2 {
+  font-family: var(--font2);
+}
+.font3 {
+  font-family: var(--font3);
+}
+.m-auto {
+  margin: auto;
+}
+
+.max-width-1 {
+  max-width: 80vw;
+}
+.max-width-2 {
+  max-width: 70vw;
+}
+.btn-1 {
+  width: 7vw;
+  height: 2vw;
+  font-size: 1.3vw;
+  background-color: rgb(242, 219, 219);
+  border: 0.05vw solid var(--text-color);
+  border-radius: 0.3vw;
+}

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+.title {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 2rem;
+  margin: auto;
+}
+nav {
+  background-color: var(--text-color);
+  width: 100vw;
+  color: var(--bg-color);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 10vh;
+}
+.logo {
+  font-size: 2rem;
+  color: var(--bg-color);
+  padding: 12px;
+  margin-right: auto;
+}
+.logo img{
+  width: 100px;
+}
+.container {
+  display: flex;
+  gap: 8vw;
+  flex-wrap: wrap;
+  margin-top: 5vw;
+}
+.gameCard {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  width: 250px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font2);
+  font-size: 2.4rem;
+  padding-bottom: 1vw;
+  cursor: pointer;
+}
+.gameName{
+  text-align: center;
+}
+.gameCard img {
+  margin: 1vw;
+  width: 230px;
+}
+@media screen and (max-width: 1150px) {
+  .title,
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width:300px) {
+  nav{
+    flex-direction: column;
+  }
+  
+}

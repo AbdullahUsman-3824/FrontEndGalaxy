@@ -1,0 +1,61 @@
+.container {
+  min-height: 90vh;
+  margin: 0px;
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: 100vw 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scoresBox {
+  font-size: 2vw;
+  font-family: var(--font3);
+  color: white;
+  align-self: flex-start;
+  margin-top: 10vh;
+}
+
+.board {
+  width: 90vmin;
+  height: 80vmin;
+  background: rgb(109, 195, 109);
+  background: linear-gradient(
+    0deg,
+    rgba(109, 195, 109, 1) 0%,
+    rgba(255, 205, 65, 1) 100%
+  );
+  border: 1vw solid rgb(108, 88, 58);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+.head {
+  background: linear-gradient(green, lime);
+  border: 0.1vw solid black;
+  border-radius: 12px;
+  transform: scale(1.2);
+  z-index: 3;
+}
+
+.body {
+  background-color: darkgreen;
+  border: 0.1vw solid white;
+  border-radius: 0.4vw;
+  z-index: 1;
+}
+.food {
+  background-color: red;
+  border: 0.2vw solid white;
+  border-radius: 50%;
+  z-index: 2;
+}
+@media screen and (max-width: 1150px) {
+  .container {
+    background: rgb(135, 166, 4);
+  }
+  .scoresBox {
+    margin-top: 0;
+    font-size: 3vw;
+  }
+}
