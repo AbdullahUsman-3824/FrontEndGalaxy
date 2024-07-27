@@ -10,6 +10,8 @@ Welcome to the **FrontEndGalaxy** repository! This collection showcases various 
   - [Project 2: Music Player Inspired by Spotify](#project-2-music-player-inspired-by-spotify)
   - [Project 3: Ultimate Clock](#project-3-ultimate-clock)
   - [Project 4: Web-Based Games](#project-4-web-based-games)
+  - [Project 5: Random Password Generator](#project-5-random-password-generator)
+  - [Project 6: To-Do List](#project-6-to-do-list)
 - [Getting Started](#getting-started)
 - [Contribution Guidelines](#contribution-guidelines)
 - [Contact](#contact)
@@ -40,11 +42,13 @@ Welcome to the **FrontEndGalaxy** repository! This collection showcases various 
 
 ### Project 3: Ultimate Clock
 
-- **Description:** A web-based clock application that allows users to switch between digital and analog clock modes. It also includes a light and dark mode switch for user preference.
+- **Description:** A web-based clock application that allows users to switch between digital and analog clock modes. It includes a light and dark mode switch for user preference, as well as an alarm clock and timer functionality.
 - **Features:**
   - Switchable digital and analog clock
   - Light and dark mode toggle
   - Real-time display updates
+  - Alarm clock functionality
+  - Timer feature
 - **Code:** [Ultimate Clock Code](UltimateClock)
 
 ### Project 4: Web-Based Games
@@ -55,6 +59,23 @@ Welcome to the **FrontEndGalaxy** repository! This collection showcases various 
   - **Snake:** A traditional snake game with increasing difficulty.
   - **Rock-Paper-Scissors:** A fun and interactive version of the classic game.
 - **Code:** [Web-Based Games Code](WebGames)
+
+### Project 5: Random Password Generator
+
+- **Description:** A web-based tool for generating random passwords. Users can specify the length and difficulty of the password.
+- **Features:**
+  - Customizable password length
+  - Changable difficulty level
+- **Code:** [Random Password Generator Code](RandomPasswordGenerator)
+
+### Project 6: To-Do List
+
+- **Description:** A simple to-do list application that allows users to add, remove, and edit tasks. The list is saved in the browser's local storage, so tasks persist even after the page is refreshed.
+- **Features:**
+  - Add and remove tasks
+  - Edit tasks
+  - Persist tasks using local storage
+- **Code:** [To-Do List Code](ToDoList)
 
 ## Getting Started
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ToDO List</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Borel&family=Edu+SA+Beginner&display=swap");
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css"
+        integrity="sha512-WidMaWaNmZqjk3gDE6KBFCoDpBz9stTsTZZTeocfq/eDNkLfpakEd7qR0bPejvy/x0iT0dvzIq4IirnBtVer5A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="head">To Do List</div>
+    <div class="container">
+        <div class="input">
+            <label><input type="text" id="keyBox" placeholder="Task No. " onfocus="value=''" /></label>
+            <label><input type="text" id="inputBox" placeholder="Enter Task" onfocus="value=''" /></label>
+            <button id="add">+</button>
+        </div>
+        <div id="error-container"></div>
+        <!-- <button id="get">Get All Tasks</button><br /> -->
+        <div class="tasks">Tasks</div>
+        <div id="output"></div>
+        <button id="clear">Clear All</button>
+        <button id="edit">Edit Tasks</button>
+        <div id="confirmation-popup" class="popup">
+            <div class="popup-content">
+                <p>Are you sure you want to clear all tasks?</p>
+                <button id="confirm-clear">Yes</button>
+                <button id="cancel-clear">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
