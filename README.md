@@ -60,13 +60,13 @@ Welcome to the **FrontEndGalaxy** repository! This collection showcases various 
   - **Rock-Paper-Scissors:** A fun and interactive version of the classic game.
 - **Code:** [Web-Based Games Code](WebGames)
 
-### Project 5: Random Password Generator
+### Project 5: Random Passward Generator
 
 - **Description:** A web-based tool for generating random passwords. Users can specify the length and difficulty of the password.
 - **Features:**
   - Customizable password length
   - Changable difficulty level
-- **Code:** [Random Password Generator Code](RandomPasswordGenerator)
+- **Code:** [Random Password Generator Code](RandomPasswardGenerator)
 
 ### Project 6: To-Do List
 
